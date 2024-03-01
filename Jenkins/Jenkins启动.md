@@ -1,24 +1,29 @@
 安装
+
 ```shell
 brew install jenkins-lts
 ```
 
 启动（包含开机启动）
+
 ```shell
 brew services start jenkins-lts
 ```
 
 停止
+
 ```shell
 brew services stop jenkins-lts
 ```
 
 重新启动
+
 ```shell
 brew services restart jenkins-lts
 ```
 
 更新
+
 ```shell
 brew upgrade jenkins-lts
 ```
@@ -31,12 +36,14 @@ Or, if you don't want/need a background service you can just run:
 ```
 
 修改httpListenAddress为0.0.0.0以使局域网访问Jenkins
+
 ```shell
 /opt/homebrew/Cellar/jenkins-lts/2.414.2/homebrew.mxcl.jenkins-lts.plist
 /Users/blowfire/Library/LaunchAgents/homebrew.mxcl.jenkins-lts.plist
 ```
 
 开启访问Jenkins的UserContent目录html文件的权限
+
 ```
 System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
 ```

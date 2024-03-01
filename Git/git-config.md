@@ -37,4 +37,5 @@ git config --global user.name "Your Name"
 git config --global user.email "your_email@example.com"
 ```
 
-全局配置会被保存在您用户目录下的全局配置文件中（一般是 `~/.gitconfig` 或者 `~/.config/git/config`），而不是保存在某个特定的仓库中。当您在没有配置仓库特定用户信息的仓库中进行提交时，Git 会使用这些全局设置。
+全局配置会被保存在您用户目录下的全局配置文件中（一般是 `~/.gitconfig` 或者 `~/.config/git/config`
+），而不是保存在某个特定的仓库中。当您在没有配置仓库特定用户信息的仓库中进行提交时，Git 会使用这些全局设置。
