@@ -71,7 +71,7 @@ git config core.sparseCheckout true
 ```shell
 # 首先初始化 sparse-checkout
 git sparse-checkout init --cone
-# 使用 set 命令来指定仅需要的目录
+# 使用 set 命令来指定仅需要的目录，会将.git/info/sparse-checkout文件重写，仅留下现在设置的目录
 git sparse-checkout set path/to/your/directory/
 # 使用 add 命令来添加需要的文件或目录
 git sparse-checkout add path/to/your/directory/
