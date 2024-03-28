@@ -1,5 +1,7 @@
 在Jenkins中使用botUser模式给Slack发送长消息并且要实现折叠，可以通过发送一个带有"attachments"的消息来实现。Slack的附件可以包含大量的文本，并且可以通过用户的交互来折叠和展开。
 
+这里要提示一下，当文本行数到达一定数量时，消息才会折叠，此时在slack中会显示 `Show more` 
+
 分成以下步骤：
 
 1. 首先，确保你的Jenkins集成了Slack，并且botUser模式已经激活。
