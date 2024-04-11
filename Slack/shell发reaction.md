@@ -9,7 +9,7 @@ message_ts="YOUR_MESSAGE_TIMESTAMP"
 reaction="YOUR_REACTION_NAME"
 
 curl -X POST -H "Authorization: Bearer $token" \
-     -H "Content-Type: application/json" \
+     -H "Content-Type: application/json; charset=utf-8" \
      -d '{"channel":"'"$channel_id"'","timestamp":"'"$message_ts"'","name":"'"$reaction"'"}' \
      "https://slack.com/api/reactions.add"
 ```
