@@ -1,3 +1,5 @@
+[可点击链接查看详细](https://firebase.google.com/docs/crashlytics/get-deobfuscated-reports?platform=unity&hl=zh-cn)
+
 `firebase` 命令行安装：
 ```shell
 brew install node
