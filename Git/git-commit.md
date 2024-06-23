@@ -24,7 +24,7 @@
    添加签名到提交信息的末尾，以证明你是该修改的作者，通常用于符合开发者证明原则的项目。
 
 7. `--no-verify` 或 `-n`：
-   跳过 `pre-commit` 或者 `commit-msg` 钩子。
+   跳过 `pre-commit` 或者 `commit-msg` 钩子（hook）。
 
 8. `-v` 或 `--verbose`：
    提供更多提交信息，包括差异内容。
