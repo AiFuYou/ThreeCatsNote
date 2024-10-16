@@ -51,6 +51,12 @@ git tag -d <tag_name>
 git fetch --tags
 ```
 
+强制同步远程tags到本地，不会删除本地tag，如果远程tag名与本地tag名冲突，则会更新tag
+
+```bash
+git fetch --tags -f
+```
+
 6. 对比本地和远程标签：
 
 要查看哪些标签只存在于本地，可以使用：
