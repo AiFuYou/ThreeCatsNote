@@ -48,6 +48,12 @@ lrwxr-xr-x  1 yourname  staff    32 Oct 13 13:37 linkToFolder -> /Users/yourname
 rm /Users/yourname/Desktop/linkToFolder
 ```
 
+### 查看某个目标路径（可带多个符号链接）的源路径
+
+```sh
+readlink -f [目标路径]
+```
+
 符号链接将被删除，但 `originalFolder` 及其内容保持不变。
 
 ### 小结
