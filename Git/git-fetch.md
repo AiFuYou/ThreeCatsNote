@@ -4,9 +4,13 @@
 
 ```bash
 git fetch --prune --prune-tags
+# 简写
+git fetch -pP
+
 ```
 
 这个命令会:
+
 - `--prune`: 删除本地不再存在于远程的远程分支引用
 - `--prune-tags`: 删除本地不再存在于远程的标签
 
@@ -36,11 +40,13 @@ git config --global fetch.prune true
 如果上述方法没有生效，你可以手动删除本地标签：
 
 a. 列出所有本地标签：
+
 ```bash
 git tag -l
 ```
 
 b. 删除不需要的标签：
+
 ```bash
 git tag -d <tag_name>
 ```
@@ -70,6 +76,7 @@ diff local_tags.txt remote_tags.txt
 这会显示本地和远程标签的差异。
 
 注意事项：
+
 - 确保在执行这些操作前，你已经提交或存储了所有本地更改。
 - 如果你有自定义的本地标签，请小心不要意外删除它们。
 - 在团队环境中，确保所有成员了解这种同步策略，以避免意外删除重要标签。
