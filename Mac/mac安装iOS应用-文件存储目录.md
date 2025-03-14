@@ -4,6 +4,7 @@
 
 ```
 ~/Library/Containers/<应用程序的bundle identifier>/Data/Library/
+~/Library/Containers/<应用程序的name>/Data/Library/
 ```
 
 这里的 `~` 表示您的用户主目录，`<应用程序的bundle identifier>` 代表应用程序的Bundle Identifier，比如 `com.example.myapp`。
