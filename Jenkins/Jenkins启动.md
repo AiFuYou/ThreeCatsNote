@@ -53,3 +53,8 @@ mac根据系统版本或芯片或设置的不同，以上文件的位置也会�
 在配置文件中添加：<string>-Dhudson.model.DirectoryBrowserSupport.CSP=true</string>
 通过Jenkins界面去设置：System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
 ```
+
+Jenkins节点设置
+
+- 节点指定java版本（最好和Jenkins的java运行环境一致），并在Jenkins的节点配置里添加java命令路径（这样不影响节点的java环境，只是用于启动节点）
+- 使用当前Jenkins的 `remoting.jar` 文件，下载地址为：http://your-jenkins-server/jnlpJars/remoting.jar
